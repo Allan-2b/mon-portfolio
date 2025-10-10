@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de présentation</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_présentation.css">
-</head>
+  </head>
 
-<body>
-    <header> 
-        <h1 id= "titre-principal">Bienvenue sur ma page de présentation </h1>
-        <nav>
-            <a href="">présentation</a>
-            <a href="pages/parcours.html">parcours</a>
-            <a href="pages/projets.html">projet</a>
-        </nav>
-        <hr>
+  <body>
+    <header id="haut" role="banner" aria-label="En-tête du site">
+      <figure role="img" aria-labelledby="figcaption-vv">
+        <img src="images/IMG20250803111406.jpg" alt="Photo de Lamotte Allan" width="200">
+        <figcaption id="figcaption-vv">Allan Lamotte</figcaption>
+      </figure>
+      <h1>Portfolio de Allan Lamotte</h1>
+      <nav role="navigation" aria-label="Navigation principale">
+        <ul>
+          <a href="">présentation</a>
+          <a href="pages/parcours.html">parcours</a>
+          <a href="pages/projets.html">projet</a>
+          <a href="pages/galerie.html">galerie</a>
+        </ul>
+      </nav>
     </header>
-    <main> 
-    <img src="images/IMG20250803111406.jpg" alt="Photo de Lamotte Allan" width="200">
-        <section class="présentation">
-            <h2>Présentation</h2>
-            <p> Bonjour, je m'appelle <strong>Lamotte Allan</strong> et je suis en L1 informatique à l'ulco</p> 
-            <p>Ceci est ma page de présentation, présentant mon parcours, mes passions et mes projets.</p>
-        </section>
-        <section class="présentation">
-            <h2>Compétences</h2>
-            <ul>
-            <li>Python</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            </ul>
 
-            <h2>Passions</h2>
-            <p> Films &#127909; : <a href="https://letterboxd.com/allan_eupho/"> Mon Letterboxd</a></p>
-            <p> Animes / Mangas &#127800; : <a href="https://myanimelist.net/profile/Allan_eupho"> Mon MyAnimeList</a></p>
-            <p> E-sport &#127918; </p>
-            <p> salle de sport &#128170; </p>
-        </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <hr>
-    <footer> 
-        <p>© 2025 - Tous droits réservés</p>
-    </footer>
+    <main role="main">
+      <nav role="navigation" aria-label="Navigation interne à la page">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#passions">Passions</a></li>
+        </ul>
+      </nav>
+
+      <!-- À propos -->
+      <section id="about" role="region" aria-labelledby="titre-about">
+        <h2 class="icon-about" id="titre-about">À propos</h2>
+        <p>
+        Je suis étudiant en L1 informatique à l'ULCO de Calais, diplomé d'un BTS électrotechnique je cherche à me réorienter dans l'informatique
+        qui était à la base ma voie principale au lycée.
+        </p>
+        <address role="contentinfo" aria-label="Coordonnées">
+          <dl>
+            <dt>Localisation :</dt>
+            <dd>Calais, France</dd>
+            <dt>Email :</dt>
+            <dd><a href="mail: allan.lamotte@univ-littoral.fr">allan.lamotte@univ-littoral.fr</a></dd>
+          </dl>
+        </address>
+      </section>
+
+      <!-- Compétences -->
+      <section id="competences" role="region" aria-labelledby="titre-competences">
+        <h2 class="icon-competences" id="titre-competences">Compétences</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Python</li>
+          <li>Accessibilité</li>
+          <li>JavaScript</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </section>
+
+      <!-- Passions -->
+      <section id="passions" role="region" aria-labelledby="titre-passions">
+        <h2 class="icon-passions" id="titre-passions">Passions</h2>
+        <ul>
+            <li> Films &#127909; : <a href="https://letterboxd.com/allan_eupho/"> Mon Letterboxd</a></li>
+            <li> Animes / Mangas &#127800; : <a href="https://myanimelist.net/profile/Allan_eupho"> Mon MyAnimeList</a></li>
+            <li> E-sport &#127918; </li>
+            <li> salle de sport &#128170; </li>
+        </ul>
+      </section>
+
     </main>
-</body>
+
+    <footer role="contentinfo" aria-label="Pied de page">
+      <p>&copy; 2025 <strong>Allan Lamotte</strong>. Tous droits réservés. | <a href="#haut">Haut de page</a></p>
+    </footer>
+  </body>
 </html>

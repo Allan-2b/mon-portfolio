@@ -1,40 +1,140 @@
-header{
-    text-align: center;
-    background-color: rgb(113, 43, 226);
-    color: white;
+
+body {
+    font-family: Arial, sans-serif;
+    
+    color: #333;
+  
+    background: #fff;
+    
+    margin: 0;
+
 }
 
-nav a{
-    margin: 10px;
-    color: white;
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #5ce4b4;
+    border-bottom: 2px solid #ddd;
+
+}
+
+
+header figure {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+header figure img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #0066cc;
+}
+
+header figure figcaption {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #0066cc;
     font-weight: bold;
 }
 
-nav a:hover{
-    color: red;
+header nav a:hover {
+    text-decoration: underline;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-}
-
-main{
-    padding: auto;
-}
-
-footer{
+main>h1 {
     text-align: center;
-    font-size: 12px;
-    color: gray;
-    margin-top: 20px;
+    color: #1e3a5f;
+    font-size: 2rem;
+    margin: 20px 0;
 }
 
-main a{
-    color: orange;
+main>section {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 15px;
 }
 
-img{
-    
-    border-radius: 20px;
+main>section h2 {
+    color: #1e3a5f;
+    font-size: 1.5em;
+}
+
+
+footer {
+    background: #1e3a5f;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ff8c42;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+main nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+main nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+main nav a {
+    text-decoration: none;
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+main nav a:hover {
+    color: #0056b3;
+}
+
+main>section p {
+    color: #333;
+    font-family: Georgia, serif;
+}
+
+main>section a {
+    color: #1e90ff;
+    text-decoration: underline;
+}
+
+main>section a:hover {
+    color: #0056b3;
 }
