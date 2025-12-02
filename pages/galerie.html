@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +9,18 @@
 </head>
 
 <body>
-    <header id="haut" role="banner" aria-label="En-tête du site">
-        <h1>Portfolio de Allan Lamotte</h1>
+    <header id="haut" role="banner">
+    <figure>
+        <img src="../images/IMG20250803111406.jpg" alt="Photo de Allan Lamotte">
+    </figure>
+    <h1>Portfolio de Allan Lamotte</h1>
         <nav role="navigation" aria-label="Navigation principale">
-            <a href="../index.html">Présentation_</a>
-            <a href="../pages/parcours.html">Parcours_</a>
-            <a href="../pages/projets.html">Projets_</a>
+            <a href="../index.html">Présentation</a>
+            <a href="../pages/parcours.html">Parcours</a>
+            <a href="../pages/projets.html">Projets</a>
             <a href="galerie.html">Galerie</a>
+            <a href="concert.html">Concert</a>
         </nav>
-        <hr>
     </header>
 
     <main>
@@ -61,29 +63,30 @@
         </section>
 
         <section class="videos" aria-label="Mes réalisations en vidéos">
-            <h2>Mes réalisations en vidéos</h2>
-            <div class="galerie videos--grid">
-                <figure>
-                    <video controls width="250">
-                        <source src="../vidéos/video1.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Projet 2</figcaption>
-                </figure>
+        <h2>Mes réalisations en vidéos</h2>
+        <div class="videos-container">
 
-                <figure>
-                    <video controls width="250">
-                        <source src="../vidéos/video2.mp4" type="video/mp4">
-                    </video>
-                    <figcaption>Projet 3</figcaption>
-                </figure>
+        <figure class="video-item">
+            <video controls>
+                <source src="../vidéos/video1.mp4" type="video/mp4">
+            </video>
+            <figcaption>Projet 4</figcaption>
+        </figure>
 
-            </div>
-        </section>
+        <figure class="video-item">
+            <video controls>
+                <source src="../vidéos/video2.mp4" type="video/mp4">
+            </video>
+            <figcaption>Projet 3</figcaption>
+        </figure>
+
+    </div>
+</section>
 
     </main>
 
-    <footer>
-        <p>&copy; 2025 Mon Site Web</p>
+    <footer role="contentinfo" aria-label="Pied de page">
+      <p>&copy; 2025 <strong>Allan Lamotte</strong>. Tous droits réservés. | <a href="#haut">Haut de page</a></p>
     </footer>
 
 </body>

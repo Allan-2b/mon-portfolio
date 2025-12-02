@@ -1,17 +1,66 @@
-.projets{
+
+.projets {
+
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    max-width: 1300px; 
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.projets:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    cursor: default;
+}
+
+.item-projets {
+    background-color: white;
+    width: auto;   
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.item-projets{
-    text-align: center;
-    padding: 10px;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 8px;
+.item-projets:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid #1e3a5f;
 }
 
-.item-projets h3{
-    color: blueviolet;
+.item-projets h3 {
+    color: #1e3a5f;
+    margin-top: 0;
+    font-size: 1.3rem; 
+    margin-bottom: 15px;
+}
+
+.item-projets p {
+    color: #555;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/*ecran tablette entre 600 et 900px*/
+@media (min-width: 600px) and (max-width: 900px) {
+    .projets {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+/*ecran mobile en dessous de 600px*/
+@media (max-width: 600px) {
+    .projets {
+        grid-template-columns: 1fr; 
+    }
 }

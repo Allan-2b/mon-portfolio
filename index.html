@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de présentation</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_présentation.css">
   </head>
 
   <body>
     <header id="haut" role="banner" aria-label="En-tête du site">
-      <figure role="img" aria-labelledby="figcaption-vv">
-        <img src="images/IMG20250803111406.jpg" alt="Photo de Lamotte Allan" width="200">
-        <figcaption id="figcaption-vv">Allan Lamotte</figcaption>
+      <figure aria-labelledby="figcaption-vv">
+        <img src="images/IMG20250803111406.jpg" alt="Photo de Lamotte Allan">
+        <figcaption id="figcaption-vv">Photo de Allan Lamotte</figcaption>
       </figure>
       <h1>Portfolio de Allan Lamotte</h1>
       <nav role="navigation" aria-label="Navigation principale">
         <ul>
-          <a href="">présentation_</a>
-          <a href="pages/parcours.html">parcours_</a>
-          <a href="pages/projets.html">projet_</a>
-          <a href="pages/galerie.html">galerie</a>
+
+          <li><a href="index.html">présentation</a></li>
+          <li><a href="pages/parcours.html">parcours</a></li>
+          <li><a href="pages/projets.html">projets</a></li>
+          <li><a href="pages/galerie.html">galerie</a></li>
+          <li><a href="pages/concert.html">Concert</a></li>
         </ul>
       </nav>
     </header>
@@ -36,24 +37,21 @@
 
       <!-- À propos -->
       <section id="about" role="region" aria-labelledby="titre-about">
-        <h2 class="icon-about" id="titre-about">À propos</h2>
+        <h2>À propos</h2>
         <p>
         Je suis étudiant en L1 informatique à l'ULCO de Calais, diplomé d'un BTS électrotechnique je cherche à me réorienter dans l'informatique
         qui était à la base ma voie principale au lycée.
         </p>
         <address role="contentinfo" aria-label="Coordonnées">
           <dl>
-            <dt>Localisation :</dt>
-            <dd>Calais, France</dd>
-            <dt>Email :</dt>
-            <dd><a href="mail: allan.lamotte@univ-littoral.fr">allan.lamotte@univ-littoral.fr</a></dd>
+            <dt>Localisation : Calais, France</dt>
+            <dt>Email <a href="mailto:allan.lamotte@univ-littoral.fr">allan.lamotte@univ-littoral.fr</a> </dt>
           </dl>
         </address>
       </section>
-
       <!-- Compétences -->
       <section id="competences" role="region" aria-labelledby="titre-competences">
-        <h2 class="icon-competences" id="titre-competences">Compétences</h2>
+        <h2>Compétences</h2>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -66,7 +64,7 @@
 
       <!-- Passions -->
       <section id="passions" role="region" aria-labelledby="titre-passions">
-        <h2 class="icon-passions" id="titre-passions">Passions</h2>
+        <h2>Passions</h2>
         <ul>
             <li> Films &#127909; : <a href="https://letterboxd.com/allan_eupho/"> Mon Letterboxd</a></li>
             <li> Animes / Mangas &#127800; : <a href="https://myanimelist.net/profile/Allan_eupho"> Mon MyAnimeList</a></li>

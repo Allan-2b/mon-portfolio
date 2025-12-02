@@ -1,0 +1,81 @@
+
+.infos-concert, .formulaire-concert {
+    background-color: white;
+    width: 80%;         
+    max-width: 600px;     
+    margin: 20px auto;    
+    padding: 20px;        
+    border: 1px solid black; 
+    border-radius: 10px;   
+}
+
+
+.infos-concert:hover, .formulaire-concert:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    cursor: default;
+}
+
+
+.infos-concert h2, .formulaire-concert h2 {
+    text-align: center;
+    color: #1e3a5f;
+    border-bottom: 2px solid #1e3a5f; 
+    padding-bottom: 10px;
+}
+
+.infos-concert p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+
+.champ {
+    margin-bottom: 15px; 
+}
+
+
+label {
+    display: block; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+
+.radio-label {
+    display: inline-block; 
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+
+input[type="text"],input[type="email"],input[type="tel"],input[type="date"] {
+    width: 100%;       
+    padding: 8px;      
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+
+.bouton-zone {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    background-color: #1e3a5f; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; 
+}

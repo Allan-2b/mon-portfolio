@@ -1,18 +1,53 @@
-th, td{
-    border: 1px solid black;
+.parcours:hover {
+    transform: none !important;  
+    box-shadow: none !important; 
+    cursor: default;             
+}
+
+.parcours {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.parcours table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 20px 0;
+    font-size: 1rem;
+    border: 3px solid #1e3a5f;  
+    border-radius: 8px; 
+    background-color: white;
+}
+
+.parcours th, .parcours td {
+    padding: 12px 15px; 
     text-align: center;
-    padding: 10px;
+    border-bottom: 1px solid #dddddd; 
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    
 }
 
-.parcours{
-    justify-items: center;
+.parcours th {
+    background-color: #1e3a5f; 
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
-th{
-    background-color: rgb(209, 244, 255);
-    color: rgb(34, 0, 255);
+.parcours tr:hover {
+    background-color: #e1f5fe; 
+    transition: background-color 0.2s ease;
 }
 
-table{
-    border-collapse: collapse;
+
+td[rowspan] {
+    background-color: #fff; 
+    border-right: 1px solid #ddd; 
+    font-weight: bold;
+    color: #1e3a5f;
 }
