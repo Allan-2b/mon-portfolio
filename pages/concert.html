@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Concert - Portfolio Allan Lamotte</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_concert.css">
+</head>
+
+<body>
+    <header id="haut" role="banner" aria-label="En-tête du site">
+        <figure>
+            <img src="../images/IMG20250803111406.jpg" alt="Photo de Allan Lamotte">
+        </figure>
+        <h1>Portfolio de Allan Lamotte</h1>
+        <nav role="navigation" aria-label="Navigation principale">
+            <a href="../index.html">Présentation</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="projets.html">Projets</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="concert.html">Concert</a>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <section class="infos-concert">
+            <h2>Informations sur l'événement</h2>
+            
+            <div class="info-bloc">
+                <p><strong>Nom officiel de l'événement :</strong> Concert D'Allan</p>
+                <p><strong>Lieu :</strong> Accord Arena</p>
+            </div>
+
+            <div class="info-bloc">
+                <h3>Date et Heure de diffusion</h3>
+                <p><strong>Date :</strong> 24 / 06 / 2025</p>
+                <p><strong>Heure de début :</strong> 20 : 00 (Fuseau horaire : Paris CET)</p>
+                <p><strong>Durée estimée :</strong> 2 h 30</p>
+            </div>
+        </section>
+
+        <section class="formulaire-concert">
+            <h2>Formulaire de contact</h2>
+            
+            <form action="#" method="post">
+                
+                <div class="champ">
+                    <label>Civilité :</label>
+                    <label class="radio-label"><input type="radio" name="civilite" value="Mme"> Mme</label>
+                    <label class="radio-label"><input type="radio" name="civilite" value="M"> M.</label>
+                    <label class="radio-label"><input type="radio" name="civilite" value="Autre"> Autre</label>
+                </div>
+
+                <div class="champ">
+                    <label for="nom">Nom de famille :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="champ">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="champ">
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="champ">
+                    <label for="tel">Numéro de téléphone :</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+
+                <div class="champ">
+                    <label for="adresse">Adresse et code postal :</label>
+                    <input type="text" id="adresse" name="adresse">
+                </div>
+
+
+                <div class="bouton-zone">
+                    <input type="submit" value="Envoyer">
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo" aria-label="Pied de page">
+        <p>&copy; 2025 <strong>Allan Lamotte</strong>. Tous droits réservés. | <a href="#haut">Haut de page</a></p>
+    </footer>
+</body>
+</html>
